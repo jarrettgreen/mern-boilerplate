@@ -2,10 +2,22 @@
   "name": "mern-boilerplate",
   "version": "0.0.1",
   "description": "MERN Project Boilerplate",
-  "main": "index.js",
+  "main": "./server/server.js",
   "scripts": {
+    "start": "nodemon ./server/server.js --exec babel-node --presets es2015",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jarrett Green",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "dot-env": "0.0.1",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.8",
+    "nodemon": "^1.11.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^3.0.0",
+    "redux": "^3.6.0"
+  }
 }
